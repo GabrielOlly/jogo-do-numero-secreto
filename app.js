@@ -14,7 +14,7 @@ exibirTextoNaTela('h1','Jogo do número secreto');
 exibirTextoNaTela('p','Escolha um numero entre 1 e 10');
 }
 
-exibirMensagemInicial();
+//exibirMensagemInicial();
 
 function verificarChute() {
     let chute = document.querySelector('input').value;
@@ -22,7 +22,7 @@ function verificarChute() {
     if (chute == numeroSecreto) {
         exibirTextoNaTela('h1','Acertou!');
         let palavraTentativa = tentativas > 1 ? 'Tentativas' : 'tentativa';
-        let mensagemTentativas = (`Você descobriu o número secreto com ${tentativas} ${palavraTentativa}!`);
+        let mensagemTentativas = (`Você descobriu o número sec reto com ${tentativas} ${palavraTentativa}!`);
         exibirTextoNaTela('p', mensagemTentativas);
         document.getElementById('reiniciar').removeAttribute('disabled');
     } else {
